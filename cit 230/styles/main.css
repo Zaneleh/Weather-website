@@ -10,9 +10,10 @@
 }
 
 body {
+    background-color: floralwhite;
     font-size: 16px;
     line-height: 32px;
-    font-family: sans-serif/* Ubuntu, sans-serif */
+    font-family: cursive/* Ubuntu, sans-serif */
     ;
     color: orange/* #xxxxxx */
     ;
@@ -44,7 +45,7 @@ header,
 footer,
 footer a {
     text-align: center;
-    background-color: dimgrey/* */
+    background-color: bisque/* */
     ;
     color: black;
 }
@@ -54,6 +55,7 @@ header img {
     ;
     height: ;
     float: right;
+    border-radius: 340%
 }
 
 footer {
