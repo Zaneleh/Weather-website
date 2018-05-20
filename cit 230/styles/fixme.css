@@ -2,16 +2,16 @@
 
 body { 
     font-size: 16px;
-    font-family: 'Sansito, sans-serif;
+    font-family: sans-serif;
 }
 
 h1, h2, h3 {
     color: #7c8855;
-    font-size:600;
+    font-size:600.rem;
 }
 
 h1 {
-    font-size: 
+    font-size: 30px
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 }
 
 main {
-	min-height: 5;
+	min-height: 5px;
 }
 
 main img {
