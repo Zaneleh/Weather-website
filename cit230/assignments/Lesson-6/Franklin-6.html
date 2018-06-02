@@ -1,0 +1,158 @@
+<DOCTYPE html>
+<html lang="en-us">
+<head> 
+ <meta charset="utf-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Weather 24/7</title>
+ <meta name="description" content="Franklin Weather Page from Weather 24/7">
+  <link rel="stylesheet" href="styles/large-6.css">
+  <link rel="stylesheet" href="styles/main-6.css">
+  <link rel="stylesheet" href="styles/meduim-6.css">
+  <link rel="stylesheet" href="styles/normalized-6.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <script src="javascript/hamburger.js"></script>
+
+</head>
+<body>
+     
+ 
+  <header>
+    
+    <div class="logo">
+        
+     <h1 class="weather 24/7">Weather 24/7</h1>
+     <div class="subheading">All year around!</div>
+      
+     
+ </div>    
+
+ 
+  <nav>
+    <button onclick="toggleNavMenu()" class="dropbtn">&#9776;</button>
+    <div id="myDropdown" class="dropdown-content">
+    	<a href="#">Home</a>
+    	<a href="#" class="active">Franklin</a>
+    	<a href="#">Greenville</a>
+    	<a href="#">Springfield</a>
+    	<a href="#">Storm Center</a>
+    	<a href="#">Gallery</a>
+    </div>
+    
+        <ul>       
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+         </ul>
+      
+     	      
+     </nav>
+   </header>
+ <main>
+   
+    <figure>
+    <img src="images/pexels-photo-461797.jpeg" sizes="100w">
+   
+
+    </figure>
+    
+   
+    
+    <section id="weathersummary">
+       <h3>Weather Summary</h3>
+       
+        <div class="current">
+            <p class="weather">Sunny Franklin City</p>
+            
+            
+    <picture>
+        
+       <img src="images/benjamin-franklin-parkway-small.jpg" sizes="50wv"
+       alt="Parkway Picture">
+        
+    </picture>
+     
+    
+     </div>
+        
+        <div class="highlow">
+        <p>High: 90&deg;</p>  
+        <p>Low: 66&deg;</p> 
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p>
+      </div>
+      
+         
+      <div class="conditions">
+         
+        <h2>City of Franklin </h2>
+          
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+      </p>
+         <picture>
+             <img src="images/farm-original.jpeg" 50w alt="">
+         </picture>   
+
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact | Zanele Hlongwane
+      999.999.9999
+      123 Main St. Rexburg, US 83440
+      
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather 24/7 | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+  </footer>
+  
+  <script src="javascript/currentdate.js"></script>
+  <script src="javascript/hamburger.js"></script>
+  
+
+</body>
+</html>

@@ -7,3 +7,33 @@
     section.forecast { display: contents}  /* show the 10-day forecast with the medium view and up */
 
   } 
+
+
+ul {list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: ;
+}
+
+li {float: left;
+    
+}
+
+li a {display: block;
+    color: ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover{
+    background-color: #111;
+    
+}
+
+nav ul li {
+    display: inline;
+    
+}

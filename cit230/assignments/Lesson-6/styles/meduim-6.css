@@ -1,0 +1,69 @@
+@media only screen and (min-width: 600px) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { 
+        display: block;
+        position: relative;
+        margin-left: 200px;
+        margin-top: -70px;
+        padding-bottom: 10px;
+         }  /* hamburger button does not need to be shown in the medium on up views */
+    
+      nav a{ font-size: 15px;}
+    
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul {display: inline;}
+    
+/*Current Weather*/
+    
+    p .weather {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em;}
+   #weathersum strong {
+        font-size: 1em; 
+        color: #4DBCE9; }
+    
+    #weathersum p {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em; 
+    }
+       .current{
+        margin: auto;    
+        width: 33%;
+	   float: left;
+	   padding-bottom:  40px;}
+
+    .highlow {
+        width: 33%;
+	   float: left;
+	   padding: 5px 40px 5px;
+	   margin: 1px auto auto auto;
+}
+    
+    
+    .conditions {
+        width: 33%;
+        min-width: 33%;
+	   float: left;
+	   padding: 5px;
+	   margin: 1px auto auto auto;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    section.forecast { display: inline}  /* show the 10-day forecast with the medium view and up */
+
+  }  
+
+ article {max-width: 50%; margin-left: auto; margin-right: auto;}
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */

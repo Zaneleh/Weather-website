@@ -153,9 +153,9 @@ main figure {
     border: none;
 }
 
-main figure img {
+main figure.sunnyday {
     width: 50px;
-    border: none;
+    border: 1px ;
     
 }
 
