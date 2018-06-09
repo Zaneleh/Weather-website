@@ -2,15 +2,17 @@
 <html lang="en-us">
 <head> 
  <meta charset="utf-8">
- 
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Weather 24/7</title>
  <meta name="description" content="Franklin Weather Page from Weather 24/7">
-  <link rel="stylesheet" href="styles/large-6.css">
-  <link rel="stylesheet" href="styles/main-6.css">
-  <link rel="stylesheet" href="styles/meduim-6.css">
-  <link rel="stylesheet" href="styles/normalized-6.css">
+ <meta name="author" content="Zanele Hlongwane">
+  <link rel="stylesheet" href="styles/main-7.css">
+  <link rel="stylesheet" href="styles/meduim-7.css">
+  <link rel="stylesheet" href="styles/large-7.css">
+  <link rel="stylesheet" href="styles/normalized.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  
+  <script src="javascript/windhill.js"></script>
   <script src="javascript/hamburger.js"></script>
 
 </head>
@@ -19,7 +21,7 @@
  
   <header>
     
-    <div class="logo">
+    <div class="header">
         
      <h1 class="weather 24/7">Weather 24/7</h1>
      <div class="subheading">All year around!</div>
@@ -32,23 +34,21 @@
     <button onclick="toggleNavMenu()" class="dropbtn">&#9776;</button>
     <div id="myDropdown" class="dropdown-content">
     	<a href="#">Home</a>
-    	<a href="#" class="active">Franklin</a>
+    	<a href="Franklin-7.html" class="active">Franklin</a>
     	<a href="#">Greenville</a>
     	<a href="#">Springfield</a>
     	<a href="#">Storm Center</a>
-    	<a href="#">Gallery</a>
+    	<a href="gallary-7.html">Gallery</a>
     </div>
     
-     <div id="Menu">       
+        <ul>       
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Franklin</a></li>
+            <li class="active"><a href="Franklin-7.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-         </div>
-      
-     	      
+            <li><a href="gallary-7.html">Gallery</a></li>
+         </ul>
      </nav>
    </header>
  <main>
@@ -70,8 +70,8 @@
             
     <picture>
         
-       <img src="images/benjamin-franklin-parkway-small.jpg" sizes="50wv"
-       alt="Parkway Picture">
+       <img src="images/benjamin-franklin-original.jpg" 
+       sizes="50wv">
         
     </picture>
      
@@ -79,18 +79,19 @@
      </div>
         
         <div class="highlow">
-        <p>High: 90&deg;</p>  
-        <p>Low: 66&deg;</p> 
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>
-      </div>
+        <p><strong>High:</strong> 90&deg;</p>  
+        <p><strong>Low:</strong> 66&deg;</p>
+        <p><strong>Precipitation:</strong> 0&#37;</p>  
+        <p><strong>Wind Speed:</strong> 5 mph SW</p>
+        <p><strong>Windchill:</strong><span id="chill"></span></p>
+        <script src="javascript/windhill.js"></script>
+    </div>  
+       
+    <div class="conditions">
       
-         
-      <div class="conditions">
-         
-        <h2>City of Franklin </h2>
-          
-      </div>           
+        
+     </div>
+                 
     </section>
         
     <section class="forecast">
@@ -152,7 +153,7 @@
   
   <script src="javascript/currentdate.js"></script>
   <script src="javascript/hamburger.js"></script>
-  <script>currentDate()</script>
+  
 
 </body>
 </html>

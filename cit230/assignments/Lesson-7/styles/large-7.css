@@ -1,0 +1,86 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+/*NAVIGATION*/    
+    nav {
+            display:flex;
+            position:relative;
+            margin-left: 200px;
+            margin-top: -70px;
+            padding-bottom: 10px;
+            }
+    
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul {display: flex;
+            }
+    a{ font-size: 20px;}
+  
+/*MAIN BODY OF THE PAGE */   
+    .bannerimage { height: 600px;}
+    
+  section.forecast {
+      display: table;
+      width: 100%;
+      
+    }  /* show the 10-day forecast with the medium view and up */
+    
+/* Current Weather*/
+    #weathersum strong {
+        font-size: 1em; 
+        color: #4DBCE9; 
+    }
+    #weathersum p {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em; 
+    }
+    
+    
+    .current{padding-bottom: 40px;}
+    
+    .highlow {
+       margin: 20px auto auto auto;
+        padding-bottom: 40px;
+}
+    .conditions {
+        margin: 20px auto auto auto;
+        padding-bottom: 40px;}
+  
+    
+/*ARTICLES AND STORIES*/  
+        article {
+            max-width: 50%; 
+            margin-left: auto; 
+            margin-right: auto;
+            
+            display: flex;
+            justify-content:center;
+}
+    
+    .artitem1 {
+        width: 50%;
+    }
+    
+  article p.town-article img { 
+        width: 50%;
+        min-width:50%;
+ }
+    
+    
+/*GALLERY*/
+    .gridgallery {
+        margin-left: 5%;
+        width: 90%;
+        padding: 30px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+        }
+    
+    .gridgallery figure:hover {box-shadow: 5px 5px 10px gray;}
+ 
+}/*don't delete on accident */

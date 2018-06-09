@@ -1,6 +1,3 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
 /*FOR SMALL SCREEN DISPLAY*/
     section.forecast { display: none; }
     nav ul { display: none; }
@@ -14,14 +11,20 @@
 
     body { 
         font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Playfair Display', serif;
         font-style: normal;
         font-weight: 300;}
 
-    h1 {color: #4DBCE9; }
-    h2,h3 {color: #144960}
+    h1 {
+        color: #4DBCE9;
+}
+    h2,h3 {
+        color: #144960;
+
+}
     h2 {}
-    h3{ font-size: 22px;}
+    h3{ font-size: 22px;
+}
 
     header, nav, main, footer { max-width: 100%;
       /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -38,48 +41,51 @@
         background-color:#144960;
         padding-left: 20px; 
         padding-right:20px;
-       height: 140px;
+        height: 140px;
        }
+
 header h1,h2 {
-        font-family: acumin-pro, sans-serif;
-        font-style: normal;
-        font-weight: 700; 
-        width:95%;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size-adjust: auto;
+        font-weight: 70; 
+        width:100%;
         padding-right:10px;
+        margin-top: -20px
     }
-    header img {
-        width:190px;
-        margin-top: 10px;
-        margin-bottom: -25px;
-        }
-    header .subheading {color: white; 
+   
+    header .subheading {
+        color: gold; 
         font-size:12px; 
-        margin-top:-20px; 
-        padding-bottom:10px; 
-        width:95%;}
-.logo{
-    display:block;
+        margin-top:-15px; 
+        padding-top:60px; 
+        width:95%;
 }
+
+
 
 /*NAVIGATION*/
     /*Hidden Navigation*/
-        nav {font-size: 20px;
-            display:block;
+        nav {
+            
+            font-size: 20px;
+            display: flex;
             position:relative;
-            margin-left: 165px;
-            margin-top: 2%;
+            margin-left: 15px;
+            margin-top: -2%;
             padding-bottom: 10px;
-            }
+           
+}
         nav button { 
             position: absolute;
-            margin-left: 90%;
-            margin-top: -80%;
+            margin-left: 85%;
+            margin-top: -60%;
             
             z-index: 1;
             
             color: white; 
             border: none;
-            display: inline-block;
+            display: inline-flex;
             font-size: 30px; 
             background: none;
             }
@@ -102,65 +108,96 @@ header h1,h2 {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Change color of dropdown */
-        .dropdown-content a:hover {background-color: #4DBCE9}
-        .dropdown-content a:active {background-color: #FEFCA8}
+        .dropdown-content a:hover {
+            background-color: #4DBCE9
+}
+        .dropdown-content a:active{
+            background-color: #FEFCA8
+}
 
-        .show {display:block;}/*works with Javascript*/
+        .show {display:flex;
+            flex-direction: column;
+} /*works with Javascript*/
 
     /*Normal Navigation*/
         nav {}
 
-        nav ul { list-style-type: none; 
-                font-size: 20px;  
+        nav ul { 
+            list-style-type: none; 
+            font-size: 20px;  
 
            }
         nav ul li {
-            display: inline; 
+            display: inline-flex; 
             padding: 5px 5px 10px 5px;}
-        nav ul li a { color: #FEFCA8;  text-decoration: none; }
-        nav ul li.active a {color:white;}
-        nav ul li a:hover {color:white;}
+        nav ul li a {
+            color: #FEFCA8;
+            text-decoration: blink; 
+}
+        nav ul li.active a {
+            color:white;}
+        nav ul li a:hover {
+            color:white;}
 
 
 /*MAIN BODY OF THE PAGE */
-    main {margin: 0 auto; 
+    main {
+        margin: 0 auto; 
         width: 100%;
          
         }
 
-    main h2 {font-size: 40px; text-align: center;}
+    main h2 {
+        font-size: 40px;
+        text-align: center;}
 
-    main figure { margin: 0 0 .2rem 2%; width:96%; }
+    main figure {
+        margin: 0 0 .2rem 2%; width:96%; 
+}
 
-    main figure img { width: 100%;}
+    main figure img { 
+        width: 100%;
+}
 
-    main h3, p, table{padding: 10px;}
+    main h3, p, table{
+        padding: 10px;}
 
 
 /*CURRENT WEATHER*/
-picture img{max-width: 100%; 
-            min-width: 50%;}
+
+picture img{
+    max-width: 100%; 
+    min-width: 50%;
+
+}
+
 /*Text for Current Weather */
     #weathersum p {
-        font-family: acumin-pro, sans-serif;
+        font-family: "Playfair + Display", serif;
         font-style: normal;
         font-weight: 700;
         font-size: 1em; 
     }
 
     #weathersum strong {
-    font-size: 1.5em; 
-    color: #4DBCE9; }
+        font-size: 1.5em; 
+        color: #4DBCE9; 
+}
 
-    .weather{font-size: 1.5em; padding: 0px;}
+    .weather 24/7{
+        font-size: 25px; 
+        padding: 10px;
+    }
 
     #weathersum h3{ 
     background-color: #FEFCA8;
-    border: 5px solid #144960;}
+    border: 5px solid #144960;
+}
 
 /* Current Weather Containers*/
     #weathersum{  
@@ -169,25 +206,28 @@ picture img{max-width: 100%;
         text-align: center;
             }
 
+.cwcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}    
+
         .current{
             margin: auto auto auto 30px;    
             width: 40%;
-           float: left;
-           }
+           
+}
 
         .highlow {
-            width: 40%;
-           float: left;
-           padding: 5px;
-            margin: 2px auto auto auto;
+             width: 40%;
+             padding: 5px;
+             margin: 2px auto auto auto;
 
     }
 
         .conditions {
             width: 100%;
             min-width: 33%;
-           float: left;
-           padding: 5px;
+            padding: 5px;
            }
 
 
@@ -204,13 +244,21 @@ picture img{max-width: 100%;
         padding: 10px;
         }
     
-    table {background-color: #144960; margin:auto; width:100%;}
-    tr{background-color: #144960;}
+    table {
+        background-color: #144960;
+        margin: auto;
+        width: 100%;
+}
+
+    tr{
+        background-color: #144960;
+}
     th {color:#FEFCA8; 
         padding: 5px; 
         padding-top: 20px; 
         padding-bottom:10px; 
-        text-align: center;}
+        text-align: center;
+}
     td{color: white; 
         padding:5px; 
         padding-top: 10px; 
@@ -222,13 +270,33 @@ picture img{max-width: 100%;
         width:100%; 
         margin: 10px;
         border: 5px solid #144960;
-        clear: both;}
-    article h3 {margin: 20px 5px 0px 5px; text-align: center;}
-    .town-article{width:100%; margin: 5px;}
-    article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 300px; /* fill the page in the small/phone view */
-  margin: auto;
+        clear: both;
 }
+    article h3 {
+        margin: 20px 5px 0px 5px; 
+        text-align: center;
+}
+    .town-article{
+        width:100%;
+        margin: 5px;
+
+}
+    article p.town-article img {  
+  width: 300px; 
+  margin: auto;
+} /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements *//* fill the page in the small/phone view */
+
+
+/*GALLERY*/
+    .gridgallery {
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    
+        }
 
 
 /*FOOTER*/
