@@ -15,12 +15,11 @@
    
     nav ul {
         display:flow-root;
-        margin-bottom: 70;
-        
-        
-            }
+        padding: 95px;
+         }
+    
     a { 
-        font-size: 20px;
+        font-size: 25px;
     }
   
 /*MAIN BODY OF THE PAGE */   
@@ -38,7 +37,7 @@
         color: #4DBCE9; 
     }
     #weathersum p {
-        font-family: acumin-pro, sans-serif;
+        font-family: "Playfair+Display", serif;
         font-style: normal;
         font-weight: 700;
         font-size: 2em; 

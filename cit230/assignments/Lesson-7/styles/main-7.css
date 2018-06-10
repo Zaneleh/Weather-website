@@ -50,17 +50,18 @@ header h1,h2 {
         font-style: italic;
         font-size-adjust: auto;
         font-weight: 200; 
-        width:100%;
+        width:max-content;
         padding-right:22%;
         margin-top: auto;
     }
    
     header .subheading {
-        color: gold; 
-        font-size:12px; 
-        margin-top:-15px; 
-        padding-top:60px; 
-        width:95%;
+        color: #4DBCE9; 
+        font-weight: bold;
+        font-style: oblique;
+        font-size:17px; 
+        margin-left:43%; 
+        width:auto;
 }
 
 
@@ -129,9 +130,9 @@ header h1,h2 {
         nav {}
 
         nav ul { 
-            list-style-type: none; 
-            font-size: 20px;  
-
+            list-style-type: georgian; 
+            font-size: 20px;
+            padding: 80px;
            }
         nav ul li {
             display: inline-flex; 
