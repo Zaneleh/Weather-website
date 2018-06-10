@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     
 /*NAVIGATION*/    
@@ -12,9 +12,16 @@
     
     
     nav button { display:none; }  /* hamburger button does not need to be shown */
-    nav ul {display: flex;
+   
+    nav ul {
+        display:flow-root;
+        margin-bottom: 70;
+        
+        
             }
-    a{ font-size: 20px;}
+    a { 
+        font-size: 20px;
+    }
   
 /*MAIN BODY OF THE PAGE */   
     .bannerimage { height: 600px;}
@@ -78,9 +85,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 10px;
-        grid-row-gap: 1em;
+        grid-row-gap: 1px;
         }
     
-    .gridgallery figure:hover {box-shadow: 5px 5px 10px gray;}
+    .gridgallery figure:hover {
+        box-shadow: 5px 5px 10px gray;}
  
 }/*don't delete on accident */
