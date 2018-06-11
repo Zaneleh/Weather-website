@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/normalized.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   
-  <script src="javascript/windhill.js"></script>
+  
   <script src="javascript/hamburger.js"></script>
 
 </head>
@@ -41,7 +41,7 @@
     	<a href="gallary-7.html">Gallery</a>
     </div>
     
-        <ul>       
+        <ul class="flex">       
             <li><a href="#">Home</a></li>
             <li class="active"><a href="Franklin-7.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -83,14 +83,12 @@
         <p><strong>Low:</strong> 66&deg;</p>
         <p><strong>Precipitation:</strong> 0&#37;</p>  
         <p><strong>Wind Speed:</strong> 5 mph SW</p>
-        <p><strong>Windchill:</strong><span id="chill"></span></p>
-        <script src="javascript/windhill.js"></script>
+        <p>WindChill: <span id="chill"></span> &deg;F
+            
+        </p>
     </div>  
        
-    <div class="conditions">
-      
-        
-     </div>
+    
                  
     </section>
         
@@ -153,7 +151,7 @@
   
   <script src="javascript/currentdate.js"></script>
   <script src="javascript/hamburger.js"></script>
-  
+  <script src="javascript/windhill.js"></script>
 
 </body>
 </html>
