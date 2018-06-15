@@ -2,7 +2,7 @@ body {
     display: block;
     background-color: black;
     color: #BF9640;
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: normal;
 
 }
@@ -31,20 +31,20 @@ header img {
     width: 100%;
     position: absolute;
     top: 0%;
-    left: 1%
+    left: 15%
 
 }
 
 header h1 {
 
     position: absolute;
-    top: 2%;
+    top: 35%;
     left: 13%;
     width: 100%;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: .4em;
-    font-size: 1.5em;
+    font-size: 5em;
     text-align: center;
     color: #BF9640;
     font-weight: normal;
@@ -61,9 +61,9 @@ header #the {
 
 header .subheading {
     position: absolute;
-    top: 12%;
-    left: 25%;
-    font-family: 'Playfair', sans-serif;
+    top: 68%;
+    left: 15%;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     letter-spacing: .6em;
     text-transform: uppercase;
@@ -74,18 +74,22 @@ header .subheading {
 
 nav {
     position: absolute;
+    top: 75%;
     font-family: 'Playfair Display', serif;
-    font-size: -1.5em;
+    font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 11px;
-    word-spacing: none;
+    letter-spacing: .4em;
+    word-spacing: 1.4em;
 
 }
 
+#storm-center{
+    word-spacing: .5em;
+}
 
 nav button{
     background-color: black;
-    position: fixed;
+    position: absolute;
     left: 7.5em;
     width: 100px;
     
@@ -93,6 +97,44 @@ nav button{
 
 nav button img{
     width: 80px;
+
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    line-height: 2em;
+    
+}
+
+nav ul li a {
+    padding: 10px;
+    color: #BF9640;
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    transition: .3s;
+    color: gold;
+}
+
+nav ul li a:active {
+    
 }
 
 main {
@@ -100,9 +142,9 @@ main {
     border: none;
     text-align: left;
     position: relative;
-    margin-top: 20%;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-top: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
     font-weight: normal;
 }
 
@@ -111,11 +153,9 @@ main img{
     float: left;
     padding-top: 25px;
     padding-bottom: 25px;
-    border: none;
 }
 
 main h2 {
-    margin-top: -10%;
     font-size: 1.8em;
     position: relative;
     font-family: 'Playfair Display', serif;
@@ -150,12 +190,10 @@ article{
 main figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
-    border: none;
 }
 
-main figure.sunnyday {
-    width: 50px;
-    border: 1px ;
+main figure img {
+    width: 50px
     
 }
 
