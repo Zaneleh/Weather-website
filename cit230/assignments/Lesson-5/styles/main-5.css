@@ -1,221 +1,238 @@
-body {
-    display: block;
-    background-color: black;
-    color: #BF9640;
-    font-family: 'Oswald', sans-serif;
-    font-weight: normal;
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-}
+/*FOR SMALL SCREEN DISPLAY*/
+    section.forecast { display: none; }
+    nav ul { display: none; }
+    nav {display:none;}
 
-header, nav, main, footer {
-    margin: 1.25rem auto;
-    margin-top: 0rem;
-    padding: .5rem;
-    padding-top: 0rem;
-    max-width: 100%;
-    text-align: left;
-}
+/*FOR THE WHOLESCREEN*/
+    * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-header {
+    body { 
+        font-size: 16px;
+        font-family: acumin-pro-condensed, sans-serif;
+        font-style: normal;
+        font-weight: 200;}
+
+    h1 {color: #4DBCE9; }
+    h2,h3 {color: #144960}
+    h3{ font-size: 22px;}
+
+    header, nav, main, footer { max-width: 100%;
+      /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    }
+
+/*COLOR FOR THE BOTTOM AND TOP PART OF THE PAGE*/
+      header, footer { 
+        background-color: #144960;
+    }
 
 
-}
-
-header img {
-    float: top;
-    width: 125%;
-    border: none;
-}
-
-#logo {
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 15%
-
-}
-
+/*HEADER*/
+    header {
+        background-color:#144960;
+        padding-left: 20px; 
+        padding-right:20px;
+       height: 140px;
+       }
 header h1 {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700; 
+        width:95%;
+        padding-right:10px;
+    }
+    header img {
+        width:190px;
+        margin-top: 10px;
+        margin-bottom: -25px;
+        }
 
-    position: absolute;
-    top: 35%;
-    left: 13%;
-    width: 100%;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: .4em;
-    font-size: 5em;
-    text-align: center;
-    color: #BF9640;
-    font-weight: normal;
-
+    header .subheading {
+        color:#4DBCE9 ; 
+        font-size:12px; 
+        margin: 20px;  
+        width: 95%;
 }
 
-header #the {
-
-    top: 10%;
-    font-size: 2em;
-
-
+.logo{
+    display:block;
 }
 
-header .subheading {
-    position: absolute;
-    top: 68%;
-    left: 15%;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    letter-spacing: .6em;
-    text-transform: uppercase;
-    font-size: .8em;
-    width: 100%
-}
+/*NAVIGATION*/
+    /*Hidden Navigation*/
+        nav {
+            font-size: 20px;
+            display:block;
+            position:relative;
+            margin-left: 165px;
+            margin-top: -4%;
+            padding-bottom: 10px;
+            }
+        nav button { 
+            position: absolute;
+            margin-left: 90%;
+            margin-top: -70%;
+            
+            z-index: 1;
+            
+            color: white; 
+            border: none;
+            display: inline-block;
+            font-size: 30px; 
+            background: none;
+            }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin-left: 20%;
+            margin-top: -55%;
+            background-color: #f9f9f9;
+            min-width: 90%;
+            box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+            
+            z-index: 2;
+            text-align: center;
+        }
+        /* Links inside */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown */
+        .dropdown-content a:hover {background-color: #4DBCE9}
+        .dropdown-content a:active {background-color: #FEFCA8}
+
+        .show {display:block;}/*works with Javascript*/
+
+    /*Normal Navigation*/
+        nav {}
+
+        nav ul { list-style-type: none; 
+                font-size: 20px;  
+
+           }
+        nav ul li {
+            display: inline; 
+            padding: 5px 5px 10px 5px;}
+        nav ul li a { color: #FEFCA8;  text-decoration: none; }
+        nav ul li.active a {color:white;}
+        nav ul li a:hover {color:white;}
 
 
-nav {
-    position: absolute;
-    top: 75%;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: .4em;
-    word-spacing: 1.4em;
+/*MAIN BODY OF THE PAGE */
+    main {margin: 0 auto; 
+        width: 100%;
+         
+        }
 
-}
+    main h2 {font-size: 40px; text-align: center;}
 
-#storm-center{
-    word-spacing: .5em;
-}
+    main figure { margin: 0 0 .2rem 2%; width:96%; }
 
-nav button{
-    background-color: black;
-    position: absolute;
-    left: 7.5em;
-    width: 100px;
+    main figure img { width: 100%;}
+
+    main h3, p, table{padding: 10px;}
+
+
+/*CURRENT WEATHER*/
+picture img{max-width: 100%; 
+            min-width: 50%;}
+/*Text for Current Weather */
+    #weathersum p {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em; 
+    }
+
+    #weathersum strong {
+    font-size: 1.5em; 
+    color: #4DBCE9; }
+
+    .weather{
+        font-size: 24px; padding: 8px;}
+
+    #weathersum h3{ 
+    background-color: #FEFCA8;
+    border: 5px solid #144960;}
+
+/* Current Weather Containers*/
+    #weathersum{  
+        align-content: center;
+        width: 100%;
+        text-align: center;
+            }
+
+        .current{
+            margin: auto auto auto 30px;    
+            width: 40%;
+           float: left;
+           }
+
+        .highlow {
+            width: 40%;
+           float: left;
+           padding: 5px;
+            margin: 2px auto auto auto;
+
+    }
+
+        .conditions {
+            width: 100%;
+            min-width: 33%;
+           float: left;
+           padding: 5px;
+           }
+
+
+
+/*TABLE*/
+
+    .forecast h3{
+        margin:auto; 
+        text-align: center; 
+        clear: both;
+        border: 5px solid #144960;
+        border-bottom: 0px;
+        background-color: #FEFCA8;
+        padding: 10px;
+        }
     
+    table {background-color: #144960; margin:auto; width:100%;}
+    tr{background-color: #144960;}
+    th {color:#FEFCA8; 
+        padding: 5px; 
+        padding-top: 20px; 
+        padding-bottom:10px; 
+        text-align: center;}
+    td{color: white; 
+        padding:5px; 
+        padding-top: 10px; 
+        padding-bottom:20px; 
+        text-align: center;}
+
+/*ARTICLES AND STORIES*/
+    article{
+        width:100%; 
+        margin: 10px;
+        border: 5px solid #144960;
+        clear: both;}
+    article h3 {
+        margin: 20px 5px 0px 5px; text-align: center;}
+    .town-article{width:100%; margin: 5px;}
+    article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 300px; /* fill the page in the small/phone view */
+  margin: auto;
 }
 
-nav button img{
-    width: 80px;
 
-}
-
-nav ul {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: block;
-    line-height: 2em;
-    
-}
-
-nav ul li a {
-    padding: 10px;
-    color: #BF9640;
-    text-decoration: none;
-}
-
-nav ul li a:link {
-    text-decoration: none;
-}
-
-nav ul li a:visited {
-    text-decoration: none;
-    
-}
-
-nav ul li a:hover {
-    transition: .3s;
-    color: gold;
-}
-
-nav ul li a:active {
-    
-}
-
-main {
-    width: 100%;
-    border: none;
-    text-align: left;
-    position: relative;
-    margin-top: 120%;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-weight: normal;
-}
-
-main img{
-    width: 100%;
-    float: left;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main h2 {
-    font-size: 1.8em;
-    position: relative;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: .18em;
-    font-weight: normal;
-}
-
-main h3 {
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 1.3em;
-    font-weight: normal;
-}
-
-main p {
-    font-size: 15.5pt;
-}
-
-.current{
-    font-size: 20pt;
-    text-transform: uppercase;
-    letter-spacing: .16em;
-    font-weight: normal;
-}
-
-article{
-    width: 100%;
-    line-height: 2em;
-}
-
-main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
-}
-
-main figure img {
-    width: 50px
-    
-}
-
-section.forecast {
-    display: none;
-}
-
-table {
-    font-size: 15pt;
-    letter-spacing: 1pt;
-    line-height: 1.8em;
-    word-spacing: 2em;
-    text-transform: uppercase;
-}
-
-footer {
-    width: 120%;
-    height: 20%;
-    border: none;
-    bottom: 0;
-    text-align: center;
-    display: block;
-    opacity: .6;
-
-}
+/*FOOTER*/
+    footer { padding:10px; color:#FEFCA8; text-align: center; }
+    footer aside {padding-left: 10px; padding-top: 10px; margin-bottom:-10px;}
+    footer>p { color:#FEFCA8; margin-bottom:-10px;} /* This structure refers to p elements that are direct children of the footer element */
