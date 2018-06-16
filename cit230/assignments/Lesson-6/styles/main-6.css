@@ -52,7 +52,8 @@ header h1,h2 {
         margin-top: 10px;
         margin-bottom: -25px;
         }
-    header .subheading {color: white; 
+    header .subheading {
+        color: white; 
         font-size:12px; 
         margin-top:-20px; 
         padding-bottom:10px; 
@@ -79,7 +80,7 @@ header h1,h2 {
             
             color: white; 
             border: none;
-            display: inline-block;
+            display: contents;
             font-size: 30px; 
             background: none;
             }
@@ -134,9 +135,14 @@ header h1,h2 {
 
     main h2 {font-size: 40px; text-align: center;}
 
-    main figure { margin: 0 0 .2rem 2%; width:96%; }
+    main figure { 
+        margin: 0 0 0 2%; 
+        width:100%;
+        float: left;        
+}
 
-    main figure img { width: 100%;}
+    main figure img {
+        width: 100%;}
 
     main h3, p, table{padding: 10px;}
 
