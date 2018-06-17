@@ -61,6 +61,7 @@ header h1,h2 {
         font-style: oblique;
         font-size:17px;
         margin-left:43%; 
+        margin-top: 1px;
         width:auto;
 }
 
@@ -338,8 +339,22 @@ form label.top input{
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 1em;
+}
+        
+/*--- SUBMIT BUTTON -----*/
+        
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
     
-        }
+}   
+        
 
 
 /*FOOTER*/
