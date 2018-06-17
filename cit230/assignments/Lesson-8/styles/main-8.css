@@ -272,10 +272,16 @@ form label.top input{
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0,1);
-    
-    
+      
 }
 
+form label.top input:required{
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
 /*TABLE*/
 
     .forecast h3{

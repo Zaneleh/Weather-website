@@ -50,16 +50,8 @@ footer a {
 }
 
 header img {
-    background-size: 32px 32px;
-    width: 32px /*  */
-    ;
-    height: 32px ;
+   width: 10rem;
     float: right;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    overflow: hidden;
-    z-index: 0;
 }
 
 footer {
