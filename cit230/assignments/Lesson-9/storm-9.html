@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather 24/7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather24/7 page">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/meduim-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+        
+         <h1 class="weather 24/7">Weather 24/7</h1>
+               <div class="subheading">All Day Everyday!</div>
+        </div>
+            
+               
+            
+            <nav>
+         <button onclick="toggleNavMenu()" class="dropbtn">&#9776;</button>
+            <div id="myDropdown" class="dropdown-content">
+            
+            <a href="#">Home</a>
+    	    <a href="Franklin-8.html">Franklin</a>
+    	    <a href="#">Greenville</a>
+    	    <a href="#">Springfield</a>
+    	    <a href="storm-8.html">Storm Center</a>
+    	    <a href="gallary-8.html">Gallery</a>
+        </div>
+               
+                <ul class=flex>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Franklin-8.html">Franklin</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="storm-8.html">Storm Center</a></li>
+                    <li><a href="gallary-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main>
+        <h2>Storm Center</h2>
+
+        <p>Experiencing some dangerous weather? Please report here so we can help you immediately!</p>
+
+        <form method="get" action="thanks.html">
+           <fieldset>
+                <label class="top">First Name*</label><input type="text" id=firstname name="firstName" title="First Name" required oninvalid="this.set CustomerValidity('Please Enter Your First Name')"><br>
+                
+                <br>
+                <label class="top">Last Name*</label><input type="text" id=lastname name="lastName" title="Last Name" required oninvalid="this.set CustomerValidity('Please Enter Your Last Name')">
+            <br>
+            
+        <br>
+            <label class="top">Email</label><input type="email" name="gmail" title="Email" placeholder="hello@gmail.com"><br>
+
+           <br> <label class="top">Telephone*</label><input type="tel" name="phone" title="Telephone" placeholder="###-###-####" required><br>
+            
+                <br>
+                <label class="top">Zip Code*</label><input type="number" name="zipcode" title="Zip Code" required><br>
+
+               <br>
+                <label class="top">Storm Date</label><input type="date" name="date" title="Date"><br>
+
+                <br> 
+                            
+                            <label class="top">Storm Type</label><input list="type" name="stormtype" title="Storm Type">
+                             <datalist id="type">
+                              <option value="Flash Flood">
+                              <option value="Hail">
+                              <option value="Hurricane">
+                              <option value="Thunderstorm">
+                              <option value="Tornado">
+                            </datalist>
+            
+            <br>
+
+            <br>
+                <label class="top">Storm Severity</label>
+
+                <input type="range" name="stormseverity" id="stormseverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="severity">5</span><br>
+            
+            <br>
+
+            
+                <label class="top">Storm Region</label>
+
+                <select name="stormregion" title="Storm Region">
+                    <option selected="selected" disabled="default">Select a Region...</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                        
+                </select>
+            
+            </fieldset>
+            <br>
+
+            <div id=danger>
+                <span>Experiencing any hazardous weather in your area?</span><br>
+                <br></div>
+                <div> 
+                <legend>(Select One)</legend>
+                <label for="q1">Yes</label>
+                <input type="radio" name="q1" value="Yes">
+                <label for="no">No</label>
+                <input type="radio" name="q1" value="No">
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="q1" value="Maybe">
+            </div>
+            <br>
+            
+            <br>
+            <div>
+                <label id="commentslabel" for="comments">Additional Information or Comments</label>
+               <br>
+                <br>
+                 <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+            </div>
+        <br>
+        <br>
+        
+        <input type="submit" value="Process Info">
+        <br>
+       <br>
+        </form>
+
+    </main>
+
+    <footer>
+        <aside>
+             Contact | Zanele Hlongwane| 999.999.9999 |  Main St. Rexburg, US 83440  | 
+        </aside>
+        <p class="footer-bar">&copy; 2018 | All Rights Reserved | Weather 24/7 | <span id="currentdate"></span></p>
+    </footer>
+    
+    <script src="javascript/currentdate.js"></script>
+    <script src="javascript/hamburger.js"></script>
+    <script src="javascript/severity.js"></script>
+    
+</body>
+</html>
