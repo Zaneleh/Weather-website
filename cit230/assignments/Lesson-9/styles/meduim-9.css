@@ -1,0 +1,101 @@
+@media only screen and (min-width: 600px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+/*NAVIGATION*/
+    nav {
+            display:flex;
+            position:relative;
+            margin-left: 200px;
+            margin-top: -50px;
+            padding-bottom: 10px;
+        
+            }
+    
+    
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul {display: flex;
+            font-size: 15px;}
+    
+    a{ font-size: 15px;}
+
+/*MAIN BODY OF THE PAGE */   
+    
+  section.forecast { 
+      display: table;
+      width: 100%;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+ 
+    
+/*Current Weather*/
+    
+    p .weather {
+        font-family: "Playfair + Display", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em;}
+    
+   #weathersum strong {
+        font-size: 1em; 
+        color: #4DBCE9; }
+    
+    #weathersum p {
+        font-family: "Playfair + Display", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em; 
+    }
+       .current{
+        margin: auto;    
+        width: 33%;
+	   padding-bottom:  40px;}
+
+    .highlow {
+        width: 33%;
+	   padding: 5px 40px 5px;
+	   margin: 1px auto auto auto;
+}
+    
+    .conditions {
+        width: 33%;
+        min-width: 33%;
+	   padding: 5px;
+	   margin: 1px auto auto auto;}
+    
+
+    
+/*ARTICLES AND STORIES*/
+    article {
+        display: inherit;
+        justify-content:center;
+
+        
+        max-width: 50%; 
+        margin-left: auto; 
+        margin-right: auto;
+}
+    
+    .artitem1 {
+        width: 50%;
+    }
+    
+  article p.town-article img { 
+    width: 50%; 
+    min-width:50%;
+}  /* responsive images */
+    
+    
+/*GALLERY*/
+    .gridgallery {
+        width: 100%;
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    
+        }
+    
+    
+}/*don't delete on accident */
