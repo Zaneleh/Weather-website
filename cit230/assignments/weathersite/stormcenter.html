@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head w3-include-html="head.html">
+	<title>Storm Center</title>
+</head>
+
+
+<body>
+
+	<header w3-include-html="header.html">
+	</header>
+
+	<main>
+		<h2>Storm Center</h2>
+
+		<p>Experiencing some dangerous weather? Please report here so we can help you immediately!</p>
+
+		<form method="get" action="thanks.html">
+			<fieldset>
+				<label class="top">First Name*</label><input type="text" id=firstname name="firstName" title="First Name" required oninvalid="this.set CustomerValidity('Please Enter Your First Name')"><br>
+
+				<br>
+				<label class="top">Last Name*</label><input type="text" id=lastname name="lastName" title="Last Name" required oninvalid="this.set CustomerValidity('Please Enter Your Last Name')">
+				<br>
+
+				<br>
+				<label class="top">Email</label><input type="email" name="gmail" title="Email" placeholder="hello@gmail.com"><br>
+
+				<br> <label class="top">Telephone*</label><input type="tel" name="phone" title="Telephone" placeholder="###-###-####" required><br>
+
+				<br>
+				<label class="top">Zip Code*</label><input type="number" name="zipcode" title="Zip Code" required><br>
+
+				<br>
+				<label class="top">Storm Date</label><input type="date" name="date" title="Date"><br>
+
+				<br>
+
+				<label class="top">Storm Type</label><input list="type" name="stormtype" title="Storm Type">
+				<datalist id="type">
+                              <option value="Flash Flood">
+                              <option value="Hail">
+                              <option value="Hurricane">
+                              <option value="Thunderstorm">
+                              <option value="Tornado">
+                            </datalist>
+
+				<br>
+
+				<br>
+				<label class="top">Storm Severity</label>
+
+				<input type="range" name="stormseverity" id="stormseverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				<span id="severity">5</span><br>
+
+				<br>
+
+
+				<label class="top">Storm Region</label>
+
+				<select name="stormregion" title="Storm Region">
+                    <option selected="selected" disabled="default">Select a Region...</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                        
+                </select>
+
+			</fieldset>
+			<br>
+
+			<div id=danger>
+				<span>Experiencing any hazardous weather in your area?</span><br>
+				<br></div>
+			<div>
+				<legend>(Select One)</legend>
+				<label for="q1">Yes</label>
+				<input type="radio" name="q1" value="Yes">
+				<label for="no">No</label>
+				<input type="radio" name="q1" value="No">
+				<label for="maybe">Maybe</label>
+				<input type="radio" name="q1" value="Maybe">
+			</div>
+			<br>
+
+			<br>
+			<div>
+				<label id="commentslabel" for="comments">Additional Information or Comments</label>
+				<br>
+				<br>
+				<textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+			</div>
+			<br>
+			<br>
+
+			<input type="submit" value="Process Info">
+			<br>
+			<br>
+		</form>
+
+	</main>
+
+	<footer w3-include-html="footer.html">
+
+	</footer>
+	<script src="javascript/w3.js"></script>
+	<script src="javascript/wayfinding.js"></script>
+	<script src="javascript/hamburger.js"></script>
+	<script src="javascript/currentdate.js"></script>
+	<script src="javascript/severity.js"></script>
+	<script src="javascript/modularize.js"></script>
+</body>
+
+</html>
