@@ -62,4 +62,4 @@
         }
     }
 
-    document.getElementsById("cityfacts").innerHTML = n;
+//    document.getElementById("cityfacts").innerHTML = n;
