@@ -15,7 +15,7 @@
    
     nav ul {
         display:flow-root;
-        padding: 95px;
+        padding: 60px;
          }
     
     a { 
@@ -61,7 +61,7 @@
             margin-left: auto; 
             margin-right: auto;
             
-            display: flex;
+            display: inherit;
             justify-content:center;
 }
     

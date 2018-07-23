@@ -1,26 +1,30 @@
-function setCurrentDate(){
-var myDate = new Date();
+var today = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
-// get day of the week
-var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var daysOfWeek = myDate.getDay(); // returns 0-6
-var daysOfWeekString = weekdays[daysOfWeek]; // Saturday
+var n = weekday[today.getDay()];
+
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+
+var mm = month[today.getMonth()];
 
 
-var daysOfMonth = myDate.getDate();
-
-
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var month = myDate.getMonth();
-var monthString = months[month]
-
-
-var fullYear = myDate.getFullYear(); // returns 2018
-
-
-var fullDate = daysOfWeekString + ', ' + daysOfMonth + ' ' + monthString + ' ' + fullYear;
-
-
-document.getElementById('currentdate').innerHTML = fullDate;
-
-}
+document.getElementById("currentdate").innerHTML = n + ", " + today.getDate() + " " + mm + " " + today.getFullYear();
