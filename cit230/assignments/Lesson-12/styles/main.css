@@ -69,6 +69,11 @@ a {
 
 }
 
+logo{
+	background-color: aliceblue;
+}
+
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -132,7 +137,8 @@ header h1 {
 
 nav button {
 
-	font-size: 3em;
+	font-size: 2em;
+	background-color:#f7c331;
 }
 
 
